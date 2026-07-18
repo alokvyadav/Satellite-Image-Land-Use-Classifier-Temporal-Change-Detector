@@ -1,0 +1,17 @@
+=== Class Imbalance Downsampling Experiment ===
+
+Downsampled Classes: Pasture and PermanentCrop (Retained only 20% training samples)
+
+Metric                        No Mitigation       Weighted Loss Mitigation 
+---------------------------------------------------------------------------
+Overall Val Accuracy          0.9506              0.9493                   
+Overall Macro F1              0.9263              0.9275                   
+Pasture F1-Score              0.7636              0.7698                   
+PermanentCrop F1-Score        0.9081              0.9295                   
+
+Analysis:
+Downsampling Pasture and PermanentCrop causes a significant drop in their individual F1-scores
+due to the minority class bias in standard cross-entropy loss. By applying class weights inversely
+proportional to the class frequencies (Weighted Loss Mitigation), the model is penalized more heavily
+for misclassifying minority class samples. This improves the recall and F1-score of the downsampled
+classes, although it may lead to a minor trade-off in the overall accuracy of majority classes.

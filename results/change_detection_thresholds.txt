@@ -1,0 +1,20 @@
+=== Cosine Similarity Change Detection Operating Points ===
+
+AUC-ROC: 0.9783
+
+Operating Point 1: Balanced (Max F1-Score)
+  - Distance Threshold: 0.4279
+  - Similarity Threshold: 0.5721
+  - Expected Precision: 0.8580
+  - Expected Recall: 0.8555
+  - Expected F1-Score: 0.8567
+
+Operating Point 2: High Recall (TPR >= 95%)
+  - Distance Threshold: 0.3503
+  - Similarity Threshold: 0.6497
+  - True Positive Rate: 0.9509
+  - False Positive Rate: 0.1128
+
+Operating Point 3: High Precision (Precision >= 95%)
+  - Distance Threshold: 0.4855
+  - Similarity Threshold: 0.5145

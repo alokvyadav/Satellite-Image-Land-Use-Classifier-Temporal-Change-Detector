@@ -1,0 +1,35 @@
+=== Fine-tuned ResNet-18 EuroSAT Validation Report ===
+                      precision    recall  f1-score   support
+
+          AnnualCrop       0.95      0.78      0.86       394
+              Forest       0.99      0.94      0.96       614
+HerbaceousVegetation       0.90      0.99      0.94       330
+             Highway       0.86      0.99      0.92       462
+          Industrial       0.98      0.95      0.97       488
+             Pasture       0.82      0.87      0.84       118
+       PermanentCrop       0.92      0.94      0.93       477
+         Residential       0.96      0.99      0.97       566
+               River       0.98      0.94      0.96       662
+             SeaLake       0.99      0.99      0.99      1289
+
+            accuracy                           0.95      5400
+           macro avg       0.93      0.94      0.93      5400
+        weighted avg       0.96      0.95      0.95      5400
+
+=== Fine-tuned ResNet-18 UC Merced Holdout Report (Mapped Labels) ===
+                      precision    recall  f1-score   support
+
+          AnnualCrop       0.63      0.19      0.29       100
+              Forest       0.20      0.30      0.24       100
+HerbaceousVegetation       0.71      0.34      0.46       200
+             Highway       0.51      0.20      0.28       400
+          Industrial       0.43      0.54      0.48       500
+             Pasture       0.00      0.00      0.00       100
+       PermanentCrop       0.00      0.00      0.00         0
+         Residential       0.55      0.12      0.19       600
+               River       0.19      0.42      0.26       100
+             SeaLake       0.00      0.00      0.00         0
+
+            accuracy                           0.27      2100
+           macro avg       0.32      0.21      0.22      2100
+        weighted avg       0.47      0.27      0.30      2100

@@ -1,0 +1,14 @@
+=== Spatial Leakage Experiment ===
+
+Random Split Validation Accuracy: 0.9731 (F1: 0.9719)
+Spatial Block Split Validation Accuracy: 0.9530 (F1: 0.9343)
+Spatial Leakage Accuracy Gap: 2.01 percentage points
+
+Explanation:
+In satellite imagery, neighboring pixels or tiles are highly spatially autocorrelated.
+When performing a random split, tiles from the same geographic coordinates or neighborhoods
+are placed into both the train and validation sets. The model essentially memorizes the
+surroundings of these tiles rather than learning generalized features. Thus, the random split
+accuracy is artificially inflated. The spatial block split, which partitions the dataset
+geographically (e.g. by longitudes), is a more rigorous and realistic measure of how the model
+generalizes to unseen geographical regions.
