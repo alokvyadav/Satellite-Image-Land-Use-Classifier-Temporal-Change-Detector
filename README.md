@@ -2,6 +2,10 @@
 
 This repository contains a complete computer vision system to classify land-use types from satellite imagery and detect temporal changes between two time periods using deep learning embeddings and cosine similarity.
 
+### 🚀 Interactive Geo-Dashboard
+When running locally, you can access the interactive dashboard here:
+👉 **[http://localhost:8501](http://localhost:8501)**
+
 ## Project Structure
 
 ```
